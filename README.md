@@ -1,9 +1,13 @@
 # beaugeste
 A touchpad gesture recognition program for libinput
 
-Usage: `beaugeste&` or something.
+## Building:
+You'll need `chibi-scheme` and the Qt stuff. qmake is used mostly out of convenience, I can't remember why exactly. Also the `libinput` driver, since that's what tells us about the touch events.
 
-Sample configuration: (in `$HOME/BeauGeste.conf`)
+## Usage: 
+`beaugeste&` or something. There aren't any options.
+
+## Sample configuration: (in `$HOME/BeauGeste.conf`)
 
 `(swipe (3 'north) "xdotool set_desktop --relative -- -1")
 (swipe (3 'south) "xdotool set_desktop --relative -- 1")
